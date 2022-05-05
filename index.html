@@ -4,17 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>firstWebsite</title>
 </head>
 <body>
     <header>
-        <h1>Website title</h1>
+        <h1>Random Shit to Master HTML & CSS</h1>
+        <nav>
+            <button id="grnBtn">Sign Up</button>
+            <button>Sign In</button>
+        </nav>
     </header>
     <section>
+        <img src="https://i.ytimg.com/vi/GhKMVlHz9FQ/maxresdefault.jpg" alt="placeholder image"/>
         <div>
-            <h2>Content desc.</h2>
-            <p>text</p>
+            <h2>Henry Rollins 2024</h2>
+            <p>Why Henry? I mean, shit, why the fuck not? You can't deny he's a hell of a lot more aesthetic than the last few guys, and he may be a Liar, but at least he was open about it. Also, he might not be a liar anymore, that songs from a long time ago.</p>
         </div>
+    </section>
+    <section>
+        <div> 
+            <button class="inputButtons">Text1</button>
+            <input placeholder="enter text1">
+            <button class="inputButtons">Text2</button>
+            <input>
+        </div>
+        <div>
+            <h3>When will I total > 1200? </h3>
+            <!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 8, 2022 17:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+        </div>
+    </section>
+    <section class="conclusionSection">
+        <h1>Thank you for visiting!</h1>
+        <a href="https://www.youtube.com/shorts/kbkl9fA3tpM">Click here for a squat.</a>
     </section>
 </body>
 </html>
